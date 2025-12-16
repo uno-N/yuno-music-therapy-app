@@ -1,0 +1,316 @@
+.app-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: #667eea;
+  margin: 20px 0 15px 0;
+  font-size: 1.2em;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.step-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== ボタンスタイル ========== */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-tap {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s;
+  margin: 20px 10px;
+}
+
+.btn-tap:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  background: #999;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-secondary:hover {
+  background: #777;
+}
+
+/* ========== タイマー表示 ========== */
+.timer-display {
+  margin: 30px 0;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 12px;
+}
+
+.time-remaining {
+  font-size: 4em;
+  font-weight: bold;
+  color: #667eea;
+  margin: 10px 0;
+}
+
+.tap-count {
+  font-size: 1.5em;
+  color: #666;
+}
+
+/* ========== 質問パネル ========== */
+.question {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.question > p {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.question-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-buttons button {
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.question-buttons button:hover {
+  background: #e8e8e8;
+  border-color: #667eea;
+}
+
+.question-buttons button.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  font-weight: bold;
+}
+
+/* ========== 気分円環 ========== */
+.mood-circle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.mood-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 25px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1em;
+  font-weight: bold;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mood-btn:hover {
+  transform: scale(1.05);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.mood-btn.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.mood-btn div:first-child {
+  font-size: 2.5em;
+}
+
+/* ========== エネルギースライダー ========== */
+.energy-slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.energy-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.energy-btn:hover {
+  transform: scale(1.05);
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.energy-btn.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.energy-emoji {
+  font-size: 2.5em;
+}
+
+.energy-name {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ========== 結果カード ========== */
+.result-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f0f0 100%);
+  border-left: 6px solid #667eea;
+  padding: 30px;
+  text-align: left;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.result-section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.result-row strong {
+  color: #667eea;
+  font-weight: 600;
+  flex: 0 0 45%;
+}
+
+.result-row span {
+  color: #333;
+  font-weight: 500;
+  flex: 0 0 50%;
+  text-align: right;
+  word-break: break-word;
+}
+
+/* ========== レスポンシブ ========== */
+@media (max-width: 500px) {
+  .mood-circle {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .energy-slider {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-tap {
+    font-size: 1.5em;
+    padding: 30px;
+  }
+
+  .result-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result-row strong {
+    flex: 0 0 100%;
+    margin-bottom: 5px;
+  }
+
+  .result-row span {
+    flex: 0 0 100%;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}
