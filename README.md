@@ -147,7 +147,7 @@ MIT License - 自由に使用、修正、配布できます
 
 ## 🔗 関連リンク
 
-- **Qiita 記事**: [あなたのQiita記事のリンクをここに貼ってください]
+- **Qiita 記事**: [[「あなたの今のリズムは？」音楽でセルフケアを行うレジリエンスツールプロト開発](https://qiita.com/s2sbvky33/items/583161adac5e0276c4b7)]
 - **CodeSandbox**: https://codesandbox.io/s/github/uno-N/yuno-music-therapy-app
 
 ---
